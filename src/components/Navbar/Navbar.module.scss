@@ -1,11 +1,25 @@
 .navigation {
   background-color: var(--main-background);
   color: var(--white);
-  padding: 20px 0;
+
+  .info {
+    max-width: 916px;
+    margin: 0 auto;
+    padding: 0;
+    p {
+      padding: 5px 0;
+      margin: 0;
+      font-size: 12px;
+    }
+    a {
+      font-size: 12px;
+    }
+  }
 
   .innerBlock {
     max-width: 1160px;
     margin: 0 auto;
+    padding: 20px 0;
   }
 
   .links {
@@ -15,6 +29,87 @@
       &:hover {
         border-bottom: 1px solid var(--accent);
       }
+    }
+  }
+
+  @mixin pseudo-line {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: #f2f5f7;
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+
+    .hamburgerLine {
+      width: 30px;
+      height: 3px;
+      background: #f2f5f7;
+      margin: 5px;
+      transition: all 0.3s ease;
+      position: relative;
+      border-radius: 4px;
+
+      &::before {
+        @include pseudo-line;
+        top: -6px;
+      }
+
+      &::after {
+        @include pseudo-line;
+        top: 6px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1201px) {
+    .innerBlock {
+      max-width: 920px;
+    }
+
+    .info {
+      max-width: 700px;
+    }
+  }
+
+  @media screen and (max-width: 1025px) {
+    .innerBlock {
+      max-width: 680px;
+    }
+
+    .info {
+      max-width: 400px;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    .links {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+    }
+
+    .innerBlock {
+      max-width: 100%;
+      padding: 20px 40px;
+    }
+
+    .info {
+      max-width: 250px;
+    }
+  }
+
+  @media screen and (max-width: 481px) {
+    .innerBlock {
+      max-width: 100%;
+      padding: 20px;
     }
   }
 }
