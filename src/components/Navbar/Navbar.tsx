@@ -1,3 +1,4 @@
+import { useState } from "react";
 import classNames from "classnames";
 
 import HorizontalLine from "../HorizontalLine/HorizontalLine";
@@ -7,6 +8,7 @@ import { NavbarProps } from "./Navbar.types";
 import styles from "./Navbar.module.scss";
 
 const Navbar: React.FC<NavbarProps> = ({ links }) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <nav className={styles.navigation}>
       <div className={classNames(styles.info, "flexbox")}>
@@ -22,10 +24,16 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
         <div className={styles.logo}>
           <img src="../../public/Livent.svg" />
         </div>
-        <div className={styles.hamburger}>
+        <div className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
           <div className={styles.hamburgerLine}></div>
         </div>
-        <div className={classNames(styles.links, "flexbox")}>
+        <div
+          className={classNames(
+            styles.links,
+            "flexbox",
+            isOpen ? styles.active : ""
+          )}
+        >
           {links &&
             links.map((link, index) => (
               <div key={index}>

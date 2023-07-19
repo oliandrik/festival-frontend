@@ -1,6 +1,7 @@
 .navigation {
   background-color: var(--main-background);
   color: var(--white);
+  box-sizing: border-box;
 
   .info {
     max-width: 916px;
@@ -90,6 +91,28 @@
   @media screen and (max-width: 769px) {
     .links {
       display: none;
+    }
+
+    .links.active {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+      padding: 40px 0;
+      background-color: var(--main-background);
+      border-top: 1px solid var(--grey);
+      position: absolute;
+      top: 85px;
+      left: 0;
+      right: 0;
+      z-index: 5;
+      z-index: 2;
+      & > div {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        cursor: pointer;
+      }
     }
 
     .hamburger {
