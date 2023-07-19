@@ -1,3 +1,4 @@
+import Intro from "./components/Intro/Intro";
 import Navbar from "./components/Navbar/Navbar";
 
 const links = [
@@ -12,6 +13,7 @@ function App() {
   return (
     <div>
       <Navbar links={links} />
+      <Intro />
     </div>
   );
 }

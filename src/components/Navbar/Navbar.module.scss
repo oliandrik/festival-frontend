@@ -1,4 +1,7 @@
 .navigation {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
   background-color: var(--main-background);
   color: var(--white);
   box-sizing: border-box;
