@@ -10,7 +10,7 @@ import styles from "./Navbar.module.scss";
 const Navbar: React.FC<NavbarProps> = ({ links }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <nav className={styles.navigation}>
+    <div className={styles.navigation}>
       <div className={classNames(styles.info, "flexbox")}>
         <div>
           <p>livent@gmail.com</p>
@@ -42,7 +42,7 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
             ))}
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 
