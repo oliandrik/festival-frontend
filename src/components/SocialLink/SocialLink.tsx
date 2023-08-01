@@ -8,7 +8,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({ imgSource, text, link }) => {
   return (
     <div className={styles.socialLink}>
       <img src={imgSource} alt={text} />
-      <a href={link}>{text}</a>
+      {link ? <a href={link}>{text}</a> : <p>{text}</p>}
     </div>
   );
 };

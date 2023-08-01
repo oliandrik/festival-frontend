@@ -13,7 +13,7 @@ const FollowUs: React.FC<FooterProps> = ({ socialLinks, images }) => {
           return (
             <SocialLink
               key={item.id}
-              imgSource={item.icon}
+              imgSource={item.imgSource}
               text={item.text}
               link={item.link}
             />

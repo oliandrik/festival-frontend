@@ -3,25 +3,25 @@ export const SocialLinks = [
     id: 1,
     link: "https://uk-ua.facebook.com/",
     text: "Facebook",
-    icon: "../../public/socials/facebook.svg",
+    imgSource: "../../public/socials/facebook.svg",
   },
   {
     id: 2,
     link: "https://instagram.com/",
     text: "Instagram",
-    icon: "../../public/socials/instagram.svg",
+    imgSource: "../../public/socials/instagram.svg",
   },
   {
     id: 3,
     link: "https://twitter.com/",
     text: "Twitter",
-    icon: "../../public/socials/twitter.svg",
+    imgSource: "../../public/socials/twitter.svg",
   },
   {
     id: 4,
     link: "https://www.tiktok.com/",
     text: "TikTok",
-    icon: "../../public/socials/tiktok.svg",
+    imgSource: "../../public/socials/tiktok.svg",
   },
 ];
 
@@ -49,5 +49,18 @@ export const Images = [
   {
     id: 6,
     imgSource: "../../public/follow-us/6.png",
+  },
+];
+
+export const Contacts = [
+  {
+    id: 1,
+    text: "livent@gmail.com",
+    imgSource: "../../public/socials/mail.svg",
+  },
+  {
+    id: 2,
+    text: "+380 93 123 45 67",
+    imgSource: "../../public/socials/phone.svg",
   },
 ];
