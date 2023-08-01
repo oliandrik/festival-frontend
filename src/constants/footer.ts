@@ -1,0 +1,53 @@
+export const SocialLinks = [
+  {
+    id: 1,
+    link: "https://uk-ua.facebook.com/",
+    text: "Facebook",
+    icon: "../../public/socials/facebook.svg",
+  },
+  {
+    id: 2,
+    link: "https://instagram.com/",
+    text: "Instagram",
+    icon: "../../public/socials/instagram.svg",
+  },
+  {
+    id: 3,
+    link: "https://twitter.com/",
+    text: "Twitter",
+    icon: "../../public/socials/twitter.svg",
+  },
+  {
+    id: 4,
+    link: "https://www.tiktok.com/",
+    text: "TikTok",
+    icon: "../../public/socials/tiktok.svg",
+  },
+];
+
+export const Images = [
+  {
+    id: 1,
+    imgSource: "../../public/follow-us/1.png",
+  },
+  {
+    id: 2,
+    imgSource: "../../public/follow-us/2.png",
+  },
+  {
+    id: 3,
+    imgSource: "../../public/follow-us/3.png",
+  },
+  {
+    id: 4,
+    imgSource: "../../public/follow-us/4.png",
+  },
+  {
+    id: 5,
+    imgSource: "../../public/follow-us/5.png",
+  },
+  {
+    id: 6,
+    imgSource: "../../public/follow-us/6.png",
+  },
+];

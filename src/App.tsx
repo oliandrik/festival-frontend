@@ -1,19 +1,14 @@
+import Footer from "./components/Footer/Footer";
 import Intro from "./components/Intro/Intro";
 import Navbar from "./components/Navbar/Navbar";
-
-const links = [
-  { text: "Home", url: "/" },
-  { text: "About", url: "/about" },
-  { text: "Schedule", url: "/schedule" },
-  { text: "News", url: "/news" },
-  { text: "Contacts", url: "/contacts" },
-];
+import { links } from "./constants/navigation-links";
 
 function App() {
   return (
     <div>
       <Navbar links={links} />
       <Intro />
+      <Footer />
     </div>
   );
 }

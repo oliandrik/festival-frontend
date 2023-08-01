@@ -1,0 +1,31 @@
+.footer {
+  background-color: #14181b;
+  color: var(--white);
+
+  .innerFooter {
+    width: 1067px;
+    margin: 0 auto;
+  }
+
+  .followUs {
+    width: 403px;
+  }
+
+  .socialImages {
+    display: flex;
+    flex-wrap: wrap; /* Wraps images to the next line if they don't fit horizontally */
+    justify-content: space-between;
+    width: 218px;
+    & > div:nth-child(-n + 3) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .socialLinks {
+    display: flex;
+    flex-direction: column;
+    & > div:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
