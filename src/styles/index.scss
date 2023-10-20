@@ -40,6 +40,11 @@ code {
   align-items: center;
 }
 
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
 a {
   text-decoration: none;
   color: var(--white);

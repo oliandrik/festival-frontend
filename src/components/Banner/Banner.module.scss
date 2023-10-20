@@ -1,0 +1,34 @@
+section {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+
+section > div {
+  height: 272px;
+  width: 100%;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+}
+
+.columns > .content {
+  justify-content: center;
+}
+
+.columns,
+.block {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.infoText {
+  align-items: center;
+  padding-top: 50px;
+  width: 746px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--white);
+}
