@@ -1,9 +1,7 @@
 import Banner from "../../components/Banner/Banner";
 import { EBannerTypes } from "../../components/Banner/Banner.enums";
 import Intro from "../../components/Intro/Intro";
-import Concert from "../../../public/backgrounds/concert_bg.png";
-import Newsletter from "../../../public/backgrounds/newsletter_bg.png";
-import Violet from "../../../public/backgrounds/violet.png";
+import { Banners } from "../../constants/banner-text";
 
 const Home = () => {
   return (
@@ -11,24 +9,21 @@ const Home = () => {
       <Intro />
       <Banner
         type={EBannerTypes.COLUMNS}
-        imgSrc={Violet}
-        title="Have your ticket on your phone"
-        text="Lorem ipsum dolor sit amet consectetur. Odio viverra imperdiet mi
-              eget fusce fermentum turpis."
+        imgSrc={Banners.InfoPhone.imgSrc}
+        title={Banners.InfoPhone.title}
+        text={Banners.InfoPhone.text}
       />
       <Banner
         type={EBannerTypes.BLOCK}
-        imgSrc={Concert}
-        title="Lorem ipsum dolor sit amet"
-        text="Lorem ipsum dolor sit amet consectetur. Convallis elit dignissim
-                amet vitae. Ut ac tellus porttitor facilisi. Tincidunt semper
-                rutrum pellentesque in odio lacus eu. Posuere a ipsum."
+        imgSrc={Banners.InfoConcert.imgSrc}
+        title={Banners.InfoConcert.title}
+        text={Banners.InfoConcert.text}
       />
       <Banner
         type={EBannerTypes.BLOCK}
-        imgSrc={Newsletter}
-        title="Get our newsletter"
-        text="Subscribe to our newsletter and never miss out latest news"
+        imgSrc={Banners.Newsletter.imgSrc}
+        title={Banners.Newsletter.title}
+        text={Banners.Newsletter.text}
       />
     </div>
   );
